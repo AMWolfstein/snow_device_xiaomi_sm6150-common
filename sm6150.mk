@@ -30,6 +30,9 @@ PRODUCT_COMPRESSED_APEX := false
 # Build Pixel Launcher Mod
 $(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 
+# MiuiCamera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
